@@ -22,7 +22,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
     var timer = Timer()
     var isAnimationStarted = false
     var isStarted = false
-    var time = 5
+    var time = 1500
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
         startButton.setTitleColor(UIColor.green, for: .normal)
         backProgressLayer.strokeColor = UIColor.white.cgColor
         timer.invalidate()
-        time = 5
+        time = 1500
         isStarted = false
         timeLabel.text = "25:00"
 
@@ -78,7 +78,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
             startButton.setTitleColor(UIColor.systemCyan, for: .normal)
             backProgressLayer.strokeColor = UIColor.blue.cgColor
             timer.invalidate()
-            time = 5
+            time = 300
             isStarted = false
             timeLabel.text = "5:00"
         } else {
@@ -93,7 +93,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
             startButton.setTitleColor(UIColor.green, for: .normal)
             backProgressLayer.strokeColor = UIColor.white.cgColor
             timer.invalidate()
-            time = 5
+            time = 1500
             isStarted = false
             timeLabel.text = "25:00"
         } else {
@@ -131,11 +131,17 @@ class ViewController: UIViewController, CAAnimationDelegate {
     }
 
     func startResumeAnimation() {
-        if !isAnimationStarted {
-            startAnimation(with: 5)
+        if !isAnimationStarted && isWorkTime == true {
+            startAnimation(with: 1500)
         } else {
             resumeAnimation()
         }
+        if !isAnimationStarted && isWorkTime == false {
+            startAnimation(with: 300)
+        } else {
+            resumeAnimation()
+        }
+
     }
 
     func startAnimation(with duration: CFTimeInterval) {
