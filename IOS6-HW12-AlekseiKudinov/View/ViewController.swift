@@ -131,17 +131,19 @@ class ViewController: UIViewController, CAAnimationDelegate {
     }
 
     func startResumeAnimation() {
-        if !isAnimationStarted && isWorkTime == true {
-            startAnimation(with: 1500)
+        if isWorkTime == true {
+            if !isAnimationStarted {
+                startAnimation(with: 1500)
+            } else {
+                resumeAnimation()
+            }
         } else {
-            resumeAnimation()
+            if !isAnimationStarted {
+                startAnimation(with: 300)
+            } else {
+                resumeAnimation()
+            }
         }
-        if !isAnimationStarted && isWorkTime == false {
-            startAnimation(with: 300)
-        } else {
-            resumeAnimation()
-        }
-
     }
 
     func startAnimation(with duration: CFTimeInterval) {
