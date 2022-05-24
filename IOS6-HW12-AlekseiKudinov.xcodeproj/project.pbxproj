@@ -37,6 +37,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0288FC0283CBE9E00949F21 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B0A679762838EACC00868884 /* SceneDelegate.swift */,
+				B0A679742838EACC00868884 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B0288FC1283CBEE800949F21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0A679782838EACC00868884 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0288FC3283CBF2E00949F21 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B0A6797A2838EACC00868884 /* Main.storyboard */,
+				B0A6797F2838EAD000868884 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B0288FC4283CBF5300949F21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0A6797D2838EAD000868884 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B0288FC5283CBF6200949F21 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B0A679822838EAD000868884 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		B0A679682838EACC00868884 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +98,11 @@
 		B0A679732838EACC00868884 /* IOS6-HW12-AlekseiKudinov */ = {
 			isa = PBXGroup;
 			children = (
-				B0A679742838EACC00868884 /* AppDelegate.swift */,
-				B0A679762838EACC00868884 /* SceneDelegate.swift */,
-				B0A679782838EACC00868884 /* ViewController.swift */,
-				B0A6797A2838EACC00868884 /* Main.storyboard */,
-				B0A6797D2838EAD000868884 /* Assets.xcassets */,
-				B0A6797F2838EAD000868884 /* LaunchScreen.storyboard */,
-				B0A679822838EAD000868884 /* Info.plist */,
+				B0288FC0283CBE9E00949F21 /* App */,
+				B0288FC1283CBEE800949F21 /* View */,
+				B0288FC3283CBF2E00949F21 /* Storyboard */,
+				B0288FC4283CBF5300949F21 /* Resources */,
+				B0288FC5283CBF6200949F21 /* Config */,
 			);
 			path = "IOS6-HW12-AlekseiKudinov";
 			sourceTree = "<group>";
@@ -288,10 +328,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS6-HW12-AlekseiKudinov/Info.plist";
+				INFOPLIST_FILE = "IOS6-HW12-AlekseiKudinov/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +356,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS6-HW12-AlekseiKudinov/Info.plist";
+				INFOPLIST_FILE = "IOS6-HW12-AlekseiKudinov/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
